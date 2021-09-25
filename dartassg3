@@ -1,0 +1,132 @@
+Q1:
+ANS:To not repeat the ball() multiple times we have to make a new list and use the toSet() and tolist() in it
+Code:
+void main(){
+  var Ball = [1,2,2, 2,4, 1];
+  var newball = Ball.toSet().toList();
+    print(newball);=
+}  
+
+Q2:
+ANS:To find the diference between 2 list: 
+Code:
+void main(){
+ List<int> first = [1,2,3,4,5,6,7];
+List<int> second = [3,5,6,7,9,10];
+List<int> difference = first.toSet().difference(second.toSet()).toList();
+print(difference.toString());
+}
+
+Q3:
+ANS:To seperate the even numbers we haveto make a new list:
+Code:
+void main(){
+ List numlist = [1, 2, 3, 4, 5, 6, 7, 9, 10];
+  List evenList = [];
+  for (final i in numlist) {
+    if (i.isEven) {
+      evenList.add(i);
+    } else {
+    }
+  }
+  print(evenList);
+}  
+
+Q4:
+ANS:
+Code:
+void main(){
+  int i,m=0,flag=0;
+  int num = 5;
+  m=num~/2;
+  for(i = 2;i<=m;i++){
+    if(num%i == 0){
+      print('$num is not a prime number');
+      flag=1;
+      break;
+    }
+  }
+  if(flag==0){
+    print('$num is prime number');
+  }
+}
+
+Q5:
+ANS: multiplication table of 7 till 15:
+Code:
+void main(){
+   var num=7;
+  for( var i=1; i<=15; i++){
+  print("${num} * ${i} = ${num*i}");
+}
+}
+
+Q6:
+ANS: to print item of a array:
+Code:
+void main() {
+    List<String> fruits = ["apple", "banana", "mango", "orange", "strawbery"]; 
+  for (var i in fruits){
+    print(i);
+  } 
+}
+
+Q7:
+ANS:
+Code:
+void main(){
+   var num=5;
+  for( var i=1; i<=100; i+5){
+  print("${num} * ${i} = ${num*i}");
+}
+}
+
+Q9:
+ANS:
+Code:
+void main(){
+   var a=5;
+  var b=3;
+  // for addition
+  var sumplus=a+b;
+  print(sumplus);
+   // for subtraction
+  var sumsub=a-b;
+  print(sumsub);
+   // for multiplication
+  var summul=a*b;
+  print(summul);
+   // for division
+  var sumdiv=a/b;
+  print(sumdiv);
+   // for addition
+  var sumrem=a%b;
+  print(sumrem);
+}
+
+Q10:
+ANS:
+cODE:
+void main(){
+   String string='i';
+  if(string=='a'){
+    print("it is vowel");
+  }
+  else if (string=="u"){
+    print("it is vowel");
+  }
+  else if (string=="e"){
+    print("it is vowel");
+  }
+  else if (string=="i"){
+    print("it is vowel");
+  }
+  else if (string=="o"){
+    print("it is vowel");
+  }
+  else{
+    print(false);
+  }
+}
+  
+
